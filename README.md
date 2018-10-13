@@ -47,7 +47,7 @@ Génère des fichiers Markedown.
 
 **EXEMPLE**
 
-![divelog](divelog.png)
+-- voir dive log.png--
 
 
 
