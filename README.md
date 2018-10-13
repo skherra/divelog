@@ -2,19 +2,30 @@
 
 Ce script permet de parser des sml de type Suunto D6I et Suunto Eon Core (à exporter depuis l'application SUUNTO) et de fournir des Markedown de logsbook synthétiques des informations de la plongée.
 
+
+
 **PRE-REQUIS & DEPENDANCES**
 
-Installer python > 3.6 ![Doc Python](https://www.python.org/downloads/)
-Installer pip ![Doc Pip](https://pip.pypa.io/en/stable/installing/)
-Installer PyYaml ![Doc PyYaml](https://pyyaml.org/)
-Installer Beautifulsoup ![Doc BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
-Installer bs4 ![Doc BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
-Installer le parseur lxml
-Installer matplotlib ![Doc Matplotib](https://matplotlib.org/)
+* Installer python > 3.6 : [Doc Python](https://www.python.org/downloads/)
 
-**Tests**
+* Installer pip [Doc Pip](https://pip.pypa.io/en/stable/installing/)
+
+* Installer PyYaml [Doc PyYaml](https://pyyaml.org/)
+
+* Installer Beautifulsoup [Doc BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
+
+* Installer bs4 [Doc BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
+
+* Installer le parseur lxml
+
+* Installer matplotlib [Doc Matplotib](https://matplotlib.org/)
+
+
+**TESTS**
 
 Testé sous Mac OS  et Windows 10
+
+
 
 **CONFIG**
 
@@ -36,7 +47,9 @@ Génère des fichiers Markedown.
 
 **EXEMPLE**
 
---sreanshot--
+![divelog](divelog.png)
+
+
 
 **EXECUTION**
 
@@ -47,5 +60,5 @@ Arguments :
  python parsesuunto.py EONCORE -- génère les sml du EON Core
 
  **NOTE**
- 
+
  Développé en amateur par des créateurs de bulles
