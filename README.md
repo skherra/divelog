@@ -53,12 +53,14 @@ Génère des fichiers Markedown.
 
 **EXECUTION**
 
-A exécuter avec python3
-Arguments :
- python parsesuunto.py  -- génère les sml des deux ordinateurs
- python parsesuunto.py D6I -- génère les sml du D6I
- python parsesuunto.py EONCORE -- génère les sml du EON Core
+A exécuter avec python3 :
+
+* python parsesuunto.py  -- génère les sml des deux ordinateurs
+* python parsesuunto.py D6I -- génère les sml du D6I
+* python parsesuunto.py EONCORE -- génère les sml du EON Core
+
+
 
  **NOTE**
 
- Développé en amateur par des créateurs de bulles
+ Développé en amateur par des créateurs de bulles :)
