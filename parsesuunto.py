@@ -19,6 +19,7 @@ def wlogbook(pathsamples,pathlogs,listdir, suunto):
 
         airstart=""
         conso=""
+        deco=""
         #Particularites du SML EONCORE
         if (suunto == "EONCORE"):
             if (soup.find("startpressure") == None):
@@ -51,6 +52,15 @@ def wlogbook(pathsamples,pathlogs,listdir, suunto):
         hour =date[11:13]
         minute = date[14:]
         datefile = year+month+day+"_"+hour+"-"+minute
+
+        #new deco
+        notifyall = soup.findAll("notify")
+
+        for i in range(len(notifyall)):
+            if (notifyall[i].type != None ):
+                if (notifyall[i].type.string == "deco"):
+                    deco = notifyall[i].type.string
+
         os.chdir(pathlogs)
         logBook = datefile+"_"+suunto+".md"
         filename = datefile+"_"+suunto
@@ -75,6 +85,10 @@ def wlogbook(pathsamples,pathlogs,listdir, suunto):
                 surfacetime = round(float(soup.find('surfacetime').string)/3600)
             file.write("**Surface Time :** {} h".format(surfacetime))
             file.write("\n")
+            #new deco
+            if (deco != ""):
+                file.write("**Plongée avec deco**")
+                file.write("\n")
             file.write("**Duration :** {} min".format(duree))
             file.write("\n")
             file.write("**Dive Mode :** {} {} %".format(soup.find('divemode').string ,oxygen))
